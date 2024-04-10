@@ -1,0 +1,63 @@
+.main {
+    margin: 0 auto;
+    max-width: var(--width-max);
+    display: grid;
+    /* overflow: hidden; */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3,530px);
+    grid-template-areas: 
+    "first  egg"
+    "cup    second"
+    "cherry oranges";
+
+}
+
+
+.main :nth-child(1) {
+    grid-area: first;
+}
+
+.main :nth-child(2) {
+    grid-area: egg;
+}
+
+.main :nth-child(3) {
+    grid-area: second;
+}
+
+.main :nth-child(4) {
+    grid-area: cup;
+}
+
+.main :nth-child(5) {
+    grid-area: cherry;
+}
+
+.main :nth-child(6) {
+    grid-area: oranges;
+}
+
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+@media all and (width < 643px) {
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 300px 400px) 550px 550px;
+        grid-template-areas: 
+        "egg"
+        "first"
+        "cup"
+        "second"
+        "cherry"
+        "oranges";
+    
+    }
+
+}

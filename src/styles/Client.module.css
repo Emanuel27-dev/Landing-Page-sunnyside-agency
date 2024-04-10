@@ -1,0 +1,44 @@
+.card {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.7em;
+    max-width: 313px;
+}
+
+.figure {
+    margin: 0 auto;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    border-radius: inherit;
+}
+
+.paragraph {
+    line-height: 1.5;
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 500;
+}
+
+.name {
+    margin-bottom: .3em;
+    font-size: 17px;
+    font-family: var(--font-fraunces);
+    color: var(--very-dark-desaturated-blue);
+}
+
+.work {
+    font-size: 13px;
+    color: var(--grayish-blue);
+}
+
+@media all and (width < 695px) {
+    .card {
+        gap: 1.7em;
+    }
+}

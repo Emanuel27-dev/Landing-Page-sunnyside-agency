@@ -1,0 +1,48 @@
+.section {
+    padding: 7em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 3em;
+    font-size: 19px;
+    letter-spacing: 3px;
+    font-family: var(--font-fraunces);
+    color: var(--grayish-blue);
+}
+
+.gridContainer {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: max-content;
+    grid-template-areas: "emily thomas jennie";
+    gap: 30px;
+    max-width: 1003px;
+}
+
+@media all and (width < 695px) {
+    .section {
+        padding: 4em 0;
+    }
+    .container {
+        width: 95%;
+    }
+    .gridContainer {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "emily"
+        "thomas"
+        "jennie";
+        justify-items: center;
+        gap: 60px;
+    }
+}

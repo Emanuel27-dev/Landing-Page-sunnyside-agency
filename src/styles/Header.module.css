@@ -1,0 +1,84 @@
+.header {
+    padding: 1.4em 1.4em 0;
+    max-width: var(--width-max);
+    min-height: 60vh;
+    margin: 0 auto;
+
+    /* background-image: url('../assets/images/desktop/image-header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button {
+    border-radius: 1.3em;
+    padding: .6em .9em;
+    font-weight: 700;
+    background-color: white;
+    font-family: var(--font-fraunces);
+    color: var(--very-dark-desaturated-blue);
+}
+
+.title {
+    text-align: center;
+    font-family: var(--font-fraunces);
+    color: var(--white);
+    letter-spacing: 3px;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.arrow {
+   text-align: center;
+   
+}
+
+.hamburguer {
+    display: none;
+}
+
+@media all and (width < 576px) {
+    .nav ul {
+        display: none;
+    }
+    .hamburguer {
+        display: unset;
+    }
+}
+
+@media all and (width < 400px) {
+    .header {
+        min-height: 67vh;
+    }
+    .title {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+    }
+    .nav {
+        margin-bottom: 4rem;
+    }
+    .nav ul {
+       display: none; 
+    }
+}
